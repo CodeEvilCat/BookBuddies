@@ -1,0 +1,153 @@
+
+ID: 06.01.01
+Name: Lend by Scanning 
+Participating Actors: User (as Owner)
+Goal: As an owner, I want to hand over a book by scanning the book ISBN code and denoting the book as borrowed.
+Trigger:
+Precondition: There is an available book which will be borrowed from owner.
+Postcondition: Owner will hand over the borrowed book by scanning the book ISBN code.
+Basic Flow:
+
+ID: 06.02.01
+Name: Confirm borrow by Scanning 
+Participating Actors: User (as borrower)
+Goal: As a borrower, I want to receive an accepted book by scanning the book ISBN code to confirm I have borrowed it.
+Trigger:
+Precondition: There is an available book which will be borrowed from owner.
+Postcondition: Borrower will receive an accepted book by scanning the book ISBN code to confirm it has borrowed.
+Basic Flow:
+
+ID: 06.03.01
+Name: Borrower view borrowed book
+Participating Actors: User (as borrower)
+Goal: As a borrower, I want to view a list of books I am borrowing, each book with its description and owner username.
+Trigger:
+Precondition: There is an available book which has borrowed from owner.
+Postcondition: Borrower can view the details of book(description and owner username) that he borrowed from different owners. 
+Basic Flow:
+
+ID: 07.01.01
+Name: Borrow by Scanning 
+Participating Actors: User (as borrower)
+Goal: As a borrower, I want to hand over a book I borrowed by scanning the book ISBN code to denote the book as available.
+Trigger:
+Precondition: There is an available book which can be borrowed.
+Postcondition: Borrower will scan the book ISBN code to denote that book is available.
+Basic Flow:
+
+ID: 07.02.01
+Name: Receive by Scanning 
+Participating Actors: User (as Owner)
+Goal: As an owner, I want to receive a returned book by scanning the book ISBN code to confirm I have it available.
+Trigger:
+Precondition: There is an available book which will be returned.
+Postcondition: User will scan the book ISBN code to confirm that book is available.
+Basic Flow:
+
+ID: 08.01.01
+Name: Owner attach photograph
+Participating Actors: User (as Owner)
+Goal: As an owner, I want to optionally attach a photograph to a book of mine.
+Trigger:
+Precondition: There are available photograph and books
+Postcondition: User will attach a photograph to a book that belongs to himself.  
+Basic Flow:
+
+ID: 08.01.01
+Name: Owner attach photograph
+Participating Actors: User (as Owner)
+Goal: As an owner, I want to optionally attach a photograph to a book of mine.
+Trigger:
+Precondition: There are available photograph and books that both belong to himself.
+Postcondition: User will attach a photograph to a book that belongs to himself.  
+Basic Flow:
+
+ID: 08.02.01
+Name: Owner attach photograph
+Participating Actors: User (as Owner)
+Goal: As an owner, I want to delete any attached photograph for a book of mine.
+Trigger:
+Precondition: There are available photograph and books
+Postcondition: User will delete a photograph from a book that belongs to himself.  
+Basic Flow:
+
+ID: 08.03.01
+Name: Owner attach photographs
+Participating Actors: User (as Owner)
+Goal: As an owner, I want to optionally attach any photograph for a book.
+Trigger:
+Precondition: There are available photograph and books.
+Postcondition: User will attach any photograph to a book .  
+Basic Flow:
+
+ID: 09.01.01
+Name: Owner specify locations
+Participating Actors: User (as Owner)
+Goal: As an owner, I want to specify a geo location on a map of where to receive a book when I accept a request on the book.
+Trigger:
+Precondition: There is a request on the book needs to be accepted.
+Postcondition: When the book is accepted, a geo location is specified by owner.
+Basic Flow:
+
+ID: 09.02.01
+Name: Borrower specify locations
+Participating Actors: User (as Borrower)
+Goal: As a borrower, I want to view the geo location of where to receive a book I will be borrowing.
+Trigger:
+Precondition: There is a book that can be received by borrower.
+Postcondition: When the book is received, a geo location is viewed by borrower.
+
+ID: 10.01.01
+Name: Club Create Group
+Participating Actors: User (as Owner)
+Goal: As a user, I want to be able to create a group where I can add members to discuss books.
+Trigger:
+Precondition: N/A
+Postcondition: Owner creates a group to add members to discuss books.
+Basic Flow:
+
+ID: 10.02.01
+Name: Club add people
+Participating Actors: User (as Owner)
+Goal: As a club owner, I want to be able to add people to my club.
+Trigger:
+Precondition: User has his own group.
+Postcondition: Owner is able to add people to personal club.
+Basic Flow:
+
+ID: 10.03.01
+Name: Club create event
+Participating Actors: User (as Owner)
+Goal: As a club owner, I want to be able to create an event.
+Trigger:
+Precondition: User has his own group.
+Postcondition: Owner can create an event.
+Basic Flow:
+
+ID: 10.04.01
+Name: Club view geolocation
+Participating Actors: User (as Owner)
+Goal: As a club member, I want to view the geolocation of an event.
+Trigger:
+Precondition: User has his own group.
+Postcondition: Owner can view the geolocation of an event.
+Basic Flow:
+
+ID: 10.05.01
+Name: Club edit page
+Participating Actors: User (as Owner)
+Goal: As a club owner, I want to edit the club page.
+Trigger:
+Precondition: User has his own club.
+Postcondition: Owner can edit the club page.
+Basic Flow:
+
+ID: 10.06.01
+Name: Club Set Time
+Participating Actors: User (as Owner)
+Goal: As a club owner, I want to set a time for an event.
+Trigger:
+Precondition: User is a club owner.
+Postcondition: User sets a time for an event.
+Basic Flow:
+
